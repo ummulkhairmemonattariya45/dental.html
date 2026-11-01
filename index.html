@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BrightSmile Dental | Family and cosmetic dentistry in Karachi</title>
+<meta name="description" content="Checkups, cleaning, whitening, braces and root canal treatment. Written quotes before treatment and same-day enquiry replies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f9fa;--surface:#fff;--ink:#0e2a33;--muted:#587078;--line:#dbe7e9;--teal:#0e7f87;--teal-d:#0a646b;--mint:#dff1f0;--deep:#0a2d37;--gold:#e0a526;--err:#b3261e}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+h1,h2,h3{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:600;letter-spacing:-.015em;line-height:1.12;margin:0}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}section{padding:84px 0}
+.btn{display:inline-block;font:inherit;font-weight:600;text-decoration:none;cursor:pointer;border:0;border-radius:10px;padding:13px 22px;background:var(--teal);color:#fff;transition:background .15s}
+.btn:hover{background:var(--teal-d)}.btn.light{background:#fff;color:var(--deep)}.btn.light:hover{background:var(--mint)}.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}.btn.ghost:hover{border-color:var(--teal)}
+:focus-visible{outline:3px solid rgba(14,127,135,.45);outline-offset:2px}
+svg.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.top{background:var(--deep);color:#b7d9d9;font-size:13.5px}.top .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}.top a{text-decoration:none;color:#fff}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:21px;text-decoration:none}.brand svg{width:30px;height:30px}
+.links{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500}.links a{text-decoration:none;color:var(--muted)}.links a:hover{color:var(--ink)}.links .btn{color:#fff;padding:10px 18px}
+.hero{padding:60px 0 72px;background:linear-gradient(180deg,#e7f3f3,var(--bg))}.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:500;margin-bottom:20px}.pill i{width:8px;height:8px;border-radius:50%;background:#2fa36b}
+.hero h1{font-size:clamp(36px,5.2vw,58px);margin-bottom:18px}.hero .lead{font-size:18px;color:var(--muted);max-width:48ch;margin:0 0 26px}
+.checks{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:10px}.checks li{display:flex;gap:10px;align-items:center;font-weight:500}.checks svg{width:20px;height:20px;color:var(--teal);flex:none}
+.rating{display:flex;align-items:center;gap:12px;font-size:14.5px;color:var(--muted)}.stars{color:var(--gold);letter-spacing:2px;font-size:17px}
+.card{background:var(--surface);border-radius:18px;padding:30px;border:1px solid var(--line);box-shadow:0 24px 48px -24px rgba(10,45,55,.3);scroll-margin-top:90px}
+.card h3{font-size:24px;margin-bottom:4px}.card .sub{margin:0 0 20px;color:var(--muted);font-size:15px}.field{margin-bottom:15px}
+label,legend{display:block;font-weight:600;font-size:14px;margin-bottom:6px;padding:0}.opt{font-weight:400;color:var(--muted)}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;font:inherit;color:var(--ink);padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fbfdfd}
+textarea{resize:vertical;min-height:76px}input:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 4px rgba(14,127,135,.15);background:#fff}
+input[aria-invalid=true]{border-color:var(--err)}.err{color:var(--err);font-size:13px;margin-top:4px}
+fieldset{border:0;padding:0;margin:0 0 15px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-block;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500;border:1.5px solid var(--line);background:#fbfdfd;cursor:pointer}
+.chip span:hover{border-color:var(--teal)}.chip input:checked+span{background:var(--teal);border-color:var(--teal);color:#fff}.chip input:focus-visible+span{box-shadow:0 0 0 4px rgba(14,127,135,.25)}
+.submit{width:100%;font-size:16px;padding:14px}.submit:disabled{opacity:.65;cursor:wait}
+.form-error{background:#fdecea;color:var(--err);border-radius:10px;padding:10px 14px;font-size:14px;margin-bottom:14px}
+.fine{color:var(--muted);font-size:13px;margin:12px 0 0;text-align:center}.hp{position:absolute;left:-9999px;height:0;overflow:hidden}[hidden]{display:none!important}
+.success{text-align:center;padding:28px 4px}.badge{width:60px;height:60px;border-radius:50%;background:var(--mint);display:grid;place-items:center;margin:0 auto 16px;color:var(--teal)}.success p{color:var(--muted);margin:8px 0 20px}
+.trust{background:#fff;border-block:1px solid var(--line)}.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust div.t{padding:22px 20px;display:flex;gap:12px;align-items:center;font-weight:600;font-size:15px;border-left:1px solid var(--line)}.trust div.t:first-child{border-left:0;padding-left:0}.trust svg{color:var(--teal);flex:none}
+.head{max-width:60ch;margin-bottom:40px}.head h2{font-size:clamp(28px,3.6vw,42px);margin-bottom:12px}.head p{margin:0;color:var(--muted);font-size:17px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px;transition:border-color .15s,box-shadow .15s}
+.svc:hover{border-color:var(--teal);box-shadow:0 14px 30px -18px rgba(10,45,55,.35)}.svc .ic{width:48px;height:48px;border-radius:12px;background:var(--mint);color:var(--teal);display:grid;place-items:center}
+.svc h3{font-size:21px}.svc p{margin:0;color:var(--muted);font-size:15px;flex:1}.svc a{font-weight:600;font-size:15px;color:var(--teal);text-decoration:none}.svc a:hover{text-decoration:underline}
+.about{background:var(--deep);color:#cfe6e6}.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about h2{color:#fff;font-size:clamp(28px,3.6vw,42px);margin-bottom:16px}.about p{margin:0 0 16px;color:#a9cfcf;font-size:17px}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:14px}.feat div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px}
+.feat b{display:block;color:#fff;font-size:17px;margin:10px 0 4px}.feat span{font-size:14.5px;color:#a9cfcf}.feat svg{color:#7fd6d6}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.doc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;text-align:center}
+.av{width:84px;height:84px;border-radius:50%;background:var(--mint);color:var(--teal-d);font-family:"Fraunces",Georgia,serif;font-size:28px;font-weight:600;display:grid;place-items:center;margin:0 auto 16px}
+.doc h3{font-size:20px}.doc .role{color:var(--teal);font-weight:600;font-size:14.5px;margin:4px 0 8px}.doc p{margin:0;color:var(--muted);font-size:14.5px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;counter-increment:s}
+.step::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--teal);color:#fff;font-weight:600;margin-bottom:16px}
+.step h3{font-size:20px;margin-bottom:8px}.step p{margin:0;color:var(--muted);font-size:15px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.rev{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;margin:0}
+.rev p{margin:10px 0 18px}.rev b{display:block}.rev span{font-size:14px;color:var(--muted)}
+.faq{max-width:780px}details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:0 22px}
+summary{cursor:pointer;font-weight:600;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--teal);font-size:22px;line-height:1}details[open] summary::after{content:"\2212"}details p{margin:0;padding:0 0 18px;color:var(--muted)}
+.band{background:var(--teal);color:#fff;padding:60px 0}.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}.band h2{font-size:clamp(26px,3.2vw,36px)}.band p{margin:8px 0 0;color:#d4f0f0}
+footer.site{background:var(--deep);color:#a9cfcf;padding:56px 0 28px;font-size:15px}.cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+footer.site h4{color:#fff;margin:0 0 12px;font-size:15px}footer.site a{display:block;text-decoration:none;margin-bottom:8px}footer.site a:hover{color:#fff}footer.site p{margin:0 0 8px}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;font-size:13.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:900px){section{padding:60px 0}.hero .wrap,.about .wrap{grid-template-columns:1fr;gap:40px}.services,.team,.steps,.reviews{grid-template-columns:1fr}.trust .wrap{grid-template-columns:1fr 1fr}.trust div.t{border-left:0;padding-left:0}.cols{grid-template-columns:1fr 1fr}.links a:not(.btn){display:none}.card{padding:24px 20px}.feat{grid-template-columns:1fr}.top .wrap span:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="ck" viewBox="0 0 24 24"><path d="M4 12.500l5 5L20 6.500"/></symbol>
+<symbol id="i-chk" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.500"/><path d="M16 16l5 5"/></symbol>
+<symbol id="i-cln" viewBox="0 0 24 24"><path d="M12 3l1.800 5.200L19 10l-5.200 1.800L12 17l-1.800-5.200L5 10l5.200-1.800zM19 16l.8 2.200L22 19l-2.200.8L19 22l-.8-2.200L16 19l2.200-.8z"/></symbol>
+<symbol id="i-wht" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></symbol>
+<symbol id="i-brc" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="8" rx="3"/><path d="M8 8v8M12 8v8M16 8v8M3 12h18"/></symbol>
+<symbol id="i-rc" viewBox="0 0 24 24"><path d="M12 6c-1.500-1.500-5-2-6.500.5S5 12 6 15c.8 2.500 1.200 6 3 6s1.200-4 3-4 1.200 4 3 4 2.200-3.500 3-6c1-3 2-6.500.5-8.500S13.500 4.500 12 6z"/></symbol>
+<symbol id="i-pl" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></symbol>
+<symbol id="i-sh" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.500-3.200 7.800-8 9-4.800-1.200-8-4.500-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></symbol>
+<symbol id="i-ph" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7zM14 3v5h5M10 13h6M10 17h6"/></symbol>
+<symbol id="i-clk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+</defs></svg>
+
+<div class="top"><div class="wrap"><span>Mon to Fri 9 am to 8 pm &middot; Sat 10 am to 5 pm</span><span>Call us: <a href="tel:+920000000000">+92 000 0000000</a></span></div></div>
+<nav><div class="wrap">
+  <a class="brand" href="#top"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 6c-2-2-6-2.500-8.500.5C5 9.500 6 14 7.500 18c1.300 3.500 1.800 8 4 8 2.200 0 1.800-5 4.500-5s2.300 5 4.500 5c2.200 0 2.700-4.500 4-8 1.500-4 2.500-8.500 0-11.500C22 3.500 18 4 16 6z" fill="#dff1f0" stroke="#0e7f87" stroke-width="1.800" stroke-linejoin="round"/></svg>BrightSmile Dental</a>
+  <div class="links"><a href="#services">Treatments</a><a href="#about">About</a><a href="#team">Our dentists</a><a href="#faq">FAQ</a><a class="btn" href="#enquiry">Book a checkup</a></div>
+</div></nav>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="pill"><i></i>Now accepting new patients</span>
+    <h1>Gentle dental care for the whole family.</h1>
+    <p class="lead">Checkups, whitening, braces and treatment you can trust. Every step is explained and every cost is quoted in writing before we begin.</p>
+    <ul class="checks">
+      <li><svg class="i"><use href="#ck"/></svg>Same-day reply to every enquiry</li>
+      <li><svg class="i"><use href="#ck"/></svg>Evening and Saturday appointments</li>
+      <li><svg class="i"><use href="#ck"/></svg>No payment or commitment to enquire</li>
+    </ul>
+    <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span>Rated highly by patients across Karachi</span></div>
+  </div>
+  <div id="enquiry" class="card" aria-live="polite">
+    <form id="enquiry-form" novalidate>
+      <h3>Request an appointment</h3>
+      <p class="sub">Takes under a minute. We'll call you to confirm a time.</p>
+      <div id="formError" class="form-error" role="alert" hidden></div>
+      <div class="field"><label for="name">Full name</label><input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ayesha Khan"><div class="err" id="err-name"></div></div>
+      <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com"><div class="err" id="err-email"></div></div>
+      <div class="field"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+92 300 1234567"><div class="err" id="err-phone"></div></div>
+      <fieldset><legend>Treatment type</legend><div class="chips">
+        <label class="chip"><input type="radio" name="treatment" value="General checkup" checked><span>General checkup</span></label>
+        <label class="chip"><input type="radio" name="treatment" value="Teeth cleaning"><span>Teeth cleaning</span></label>
+        <label class="chip"><input type="radio" name="treatment" value="Teeth whitening"><span>Teeth whitening</span></label>
+        <label class="chip"><input type="radio" name="treatment" value="Braces / aligners"><span>Braces / aligners</span></label>
+        <label class="chip"><input type="radio" name="treatment" value="Root canal"><span>Root canal</span></label>
+        <label class="chip"><input type="radio" name="treatment" value="Other"><span>Other</span></label>
+      </div></fieldset>
+      <div class="field"><label for="message">Anything we should know? <span class="opt">(optional)</span></label><textarea id="message" name="message" placeholder="Preferred day or time, pain or concerns"></textarea></div>
+      <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button type="submit" class="btn submit" id="submitBtn">Send enquiry</button>
+      <p class="fine">We only use your details to contact you about this enquiry.</p>
+    </form>
+    <div id="success" class="success" hidden>
+      <div class="badge"><svg class="i" style="width:30px;height:30px"><use href="#ck"/></svg></div>
+      <h3>Enquiry sent</h3><p id="successText"></p>
+      <button type="button" class="btn ghost" id="again">Send another enquiry</button>
+    </div>
+  </div>
+</div></section>
+
+<div class="trust"><div class="wrap">
+  <div class="t"><svg class="i"><use href="#i-sh"/></svg>Sterilised instruments</div>
+  <div class="t"><svg class="i"><use href="#i-doc"/></svg>Written quotes upfront</div>
+  <div class="t"><svg class="i"><use href="#i-ph"/></svg>Same-day call back</div>
+  <div class="t"><svg class="i"><use href="#i-clk"/></svg>Evening slots available</div>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="head"><h2>Treatments for every stage of oral health</h2><p>Choose a treatment and we'll start your enquiry with it already selected.</p></div>
+  <div class="services">
+    <article class="svc"><span class="ic"><svg class="i"><use href="#i-chk"/></svg></span><h3>General checkup</h3><p>A full exam, gum check and personal advice to keep small problems from becoming big ones.</p><a href="#enquiry" data-t="General checkup">Enquire about a checkup</a></article>
+    <article class="svc"><span class="ic"><svg class="i"><use href="#i-cln"/></svg></span><h3>Teeth cleaning</h3><p>Professional scale and polish that removes plaque, tartar and everyday surface stains.</p><a href="#enquiry" data-t="Teeth cleaning">Enquire about cleaning</a></article>
+    <article class="svc"><span class="ic"><svg class="i"><use href="#i-wht"/></svg></span><h3>Teeth whitening</h3><p>Supervised whitening that brightens your smile safely, with sensitivity kept in check.</p><a href="#enquiry" data-t="Teeth whitening">Enquire about whitening</a></article>
+    <article class="svc"><span class="ic"><svg class="i"><use href="#i-brc"/></svg></span><h3>Braces and aligners</h3><p>Metal braces or clear aligners, planned after a full assessment of your bite.</p><a href="#enquiry" data-t="Braces / aligners">Enquire about braces</a></article>
+    <article class="svc"><span class="ic"><svg class="i"><use href="#i-rc"/></svg></span><h3>Root canal</h3><p>Relieve tooth pain and save a damaged tooth, with local anaesthesia throughout.</p><a href="#enquiry" data-t="Root canal">Enquire about root canal</a></article>
+    <article class="svc"><span class="ic"><svg class="i"><use href="#i-pl"/></svg></span><h3>Something else</h3><p>Fillings, crowns, extractions or a second opinion. Tell us what's going on.</p><a href="#enquiry" data-t="Other">Send an enquiry</a></article>
+  </div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+  <div>
+    <h2>A clinic built around your comfort</h2>
+    <p>Many people put off the dentist because of past experiences. We work the other way round: we listen first, explain clearly and let you set the pace.</p>
+    <p>You will always know what we found, what it means and what it costs before we do anything.</p>
+    <a class="btn light" href="#enquiry">Book a checkup</a>
+  </div>
+  <div class="feat">
+    <div><svg class="i"><use href="#i-doc"/></svg><b>Clear pricing</b><span>A written quote before treatment, with no surprises.</span></div>
+    <div><svg class="i"><use href="#i-sh"/></svg><b>Safe and sterile</b><span>Every instrument is sterilised and sealed between patients.</span></div>
+    <div><svg class="i"><use href="#i-pl"/></svg><b>Gentle approach</b><span>Numbing gel, breaks on request and calm explanations.</span></div>
+    <div><svg class="i"><use href="#i-clk"/></svg><b>Flexible hours</b><span>Evening and Saturday slots around work and school.</span></div>
+  </div>
+</div></section>
+
+<section id="team"><div class="wrap">
+  <div class="head"><h2>Meet your dentists</h2><p>Experienced, friendly and happy to answer every question.</p></div>
+  <div class="team">
+    <div class="doc"><div class="av">SM</div><h3>Dr. Sana Malik</h3><div class="role">Principal dentist</div><p>General and cosmetic dentistry, with a focus on anxious patients.</p></div>
+    <div class="doc"><div class="av">AH</div><h3>Dr. Ahmed Hassan</h3><div class="role">Orthodontist</div><p>Braces and clear aligners for teenagers and adults.</p></div>
+    <div class="doc"><div class="av">FR</div><h3>Dr. Fatima Raza</h3><div class="role">Endodontist</div><p>Root canal treatment and tooth-saving procedures.</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="head"><h2>How your enquiry works</h2></div>
+  <div class="steps">
+    <div class="step"><h3>Send your enquiry</h3><p>Share your details and the treatment you're interested in.</p></div>
+    <div class="step"><h3>We call you back</h3><p>Our team phones you the same working day to agree a time.</p></div>
+    <div class="step"><h3>Visit the clinic</h3><p>Meet your dentist, get a clear plan and a written quote.</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="head"><h2>What patients say</h2></div>
+  <div class="reviews">
+    <figure class="rev"><span class="stars" aria-hidden="true">★★★★★</span><p>I hadn't seen a dentist in years and was dreading it. They were patient and never made me feel judged.</p><b>Sara A.</b><span>General checkup</span></figure>
+    <figure class="rev"><span class="stars" aria-hidden="true">★★★★★</span><p>The quote matched the final bill exactly, and my braces plan was explained using photos of my own teeth.</p><b>Hamza R.</b><span>Braces</span></figure>
+    <figure class="rev"><span class="stars" aria-hidden="true">★★★★★</span><p>Root canal with no pain at all. They even called the next day to check how I was doing.</p><b>Nida K.</b><span>Root canal</span></figure>
+  </div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap faq">
+  <div class="head"><h2>Common questions</h2></div>
+  <details><summary>How soon will you reply to my enquiry?</summary><p>We reply the same working day, usually by phone, to confirm a time that suits you.</p></details>
+  <details><summary>Does a checkup hurt?</summary><p>No. A checkup is an exam and a gentle clean-up. If anything needs treatment, we explain it first.</p></details>
+  <details><summary>How often should I get a checkup?</summary><p>Most people benefit from one every six months. We'll recommend a schedule based on your own teeth.</p></details>
+  <details><summary>Does sending an enquiry commit me to anything?</summary><p>No. An enquiry is only a request for us to contact you, with no payment or obligation.</p></details>
+</div></section>
+
+<div class="band"><div class="wrap">
+  <div><h2>Ready for a healthier smile?</h2><p>Send an enquiry and we'll take it from there.</p></div>
+  <a class="btn light" href="#enquiry">Book a checkup</a>
+</div></div>
+</main>
+
+<footer class="site"><div class="wrap">
+  <div class="cols">
+    <div><h4>BrightSmile Dental</h4><p>Family and cosmetic dentistry with clear pricing and a gentle approach.</p></div>
+    <div><h4>Treatments</h4><a href="#services">Checkups</a><a href="#services">Cleaning</a><a href="#services">Whitening</a><a href="#services">Braces</a></div>
+    <div><h4>Clinic</h4><a href="#about">About us</a><a href="#team">Our dentists</a><a href="#faq">FAQ</a></div>
+    <div><h4>Contact</h4><p>+92 000 0000000</p><p>hello@brightsmile.example</p><p>123 Main Boulevard, Karachi</p></div>
+  </div>
+  <div class="copy"><span>&copy; 2026 BrightSmile Dental. All rights reserved.</span><span>Mon to Fri 9 am to 8 pm &middot; Sat 10 am to 5 pm</span></div>
+</div></footer>
+
+<script>
+// n8n webhook. "webhook-test" URLs only work while "Listen for test event" is active in n8n.
+// For live use, switch to the Production URL (/webhook/ instead of /webhook-test/).
+const WEBHOOK_URL="https://ummul45.app.n8n.cloud/webhook-test/d54e06cd-f496-4198-a076-d99699e93c80";
+const form=document.getElementById("enquiry-form"),btn=document.getElementById("submitBtn"),formError=document.getElementById("formError"),success=document.getElementById("success");
+document.querySelectorAll("[data-t]").forEach(a=>a.addEventListener("click",()=>{const r=form.querySelector('input[name=treatment][value="'+a.dataset.t+'"]');if(r)r.checked=true}));
+function setError(id,m){const i=document.getElementById(id);document.getElementById("err-"+id).textContent=m||"";i.setAttribute("aria-invalid",m?"true":"false")}
+function validate(){
+  const n=form.name.value.trim(),e=form.email.value.trim(),p=form.phone.value.trim();
+  setError("name",n.length<2?"Enter your full name.":"");
+  setError("email",/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)?"":"Enter a valid email address, like name@example.com.");
+  setError("phone",p.replace(/\D/g,"").length>=7&&/^[+\d\s\-()]+$/.test(p)?"":"Enter a valid phone number.");
+  const bad=form.querySelector('[aria-invalid="true"]');if(bad){bad.focus();return false}return true}
+form.addEventListener("submit",async ev=>{
+  ev.preventDefault();formError.hidden=true;
+  if(form.website.value)return;
+  if(!validate())return;
+  const d={name:form.name.value.trim(),email:form.email.value.trim(),phone:form.phone.value.trim(),treatment:form.treatment.value,message:form.message.value.trim(),submittedAt:new Date().toISOString(),source:"dental-website"};
+  btn.disabled=true;btn.textContent="Sending…";
+  try{
+    const r=await fetch(WEBHOOK_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)});
+    if(!r.ok)throw new Error("Server responded with "+r.status);
+    document.getElementById("successText").textContent="Thanks "+d.name.split(" ")[0]+"! We'll contact you shortly about your "+d.treatment.toLowerCase()+".";
+    form.hidden=true;success.hidden=false;
+  }catch(err){console.error(err);formError.textContent="We couldn't send your enquiry. Check your connection and try again.";formError.hidden=false}
+  finally{btn.disabled=false;btn.textContent="Send enquiry"}
+});
+document.getElementById("again").addEventListener("click",()=>{form.reset();["name","email","phone"].forEach(i=>setError(i,""));success.hidden=true;form.hidden=false;form.name.focus()});
+</script>
+</body>
+</html>
+
+
